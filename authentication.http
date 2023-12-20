@@ -1,0 +1,30 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "nikki@123",
+  "name": "Nikki Kanamarlapudi",
+  "password": "nikki_567",
+  "gender": "female",
+  "location": "San Francisco"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "nikki@123",
+  "password": "nikki@_5678"
+}
+
+###
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "nikki@123",
+  "oldPassword": "nikki@_5678",
+  "newPassword": "nikki@_5678"
+}
